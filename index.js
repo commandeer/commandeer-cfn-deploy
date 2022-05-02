@@ -26,6 +26,7 @@ module.exports = (args) => {
     AWS.config.credentials = creds;
   }
   AWS.config.update({
+    endpoint: args.endpoint,
     region: args.region,
     accessKeyId: args.accesskey,
     secretAccessKey: args.secretkey,
